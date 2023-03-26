@@ -1,0 +1,227 @@
+:root {--neutral:#232946;
+--base-100:#fffffe;
+--neutral-focus:#121629;
+--primary: #df87a5;
+--accent: #d4d8f0;
+--secondary:#b8c1ec;}
+
+
+
+*{margin: 0;
+scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Noto-serif", sans-serif;
+    text-align: center;
+    background-color: var(--neutral);}
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {font-family: "Poppins", sans-serif;
+    }
+
+
+h1 {
+    font-size: 90px;
+}
+
+
+
+#navbar{
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:var(--neutral);
+    padding: 30px 0;
+    font-size: 25px;
+    border-bottom: 2px solid var(--neutral-focus);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 30px;
+    color: var(--base-100);
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    color:var(--primary);
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("https://res.cloudinary.com/dq2yibhlo/image/upload/v1679419302/cover-image_33_naeyde.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--neutral-focus);
+    color:var(--base-100);
+    display: flex;
+    flex-direction: column;
+}
+
+
+#welcome-section h1 {
+    margin-top: 20vh;
+    font-size: 90px;
+    text-shadow: 2px 2px 4px #000000;
+    color: var(--base-100);
+}
+
+#welcome-section p {
+    color: var(--primary);
+    font-size: 45px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+
+#welcome-section .welcome-section-image img {
+    height:200px;
+    width:200px;
+    transition: transform 1s ease-in-out;
+}
+
+#welcome-section .welcome-section-image img:hover {
+transform: scale(1.2,1.2);
+}
+
+
+#projects {
+    background-color: var(--secondary);
+    color: var(--neutral);
+}
+#projects h1 {
+border-bottom: 5px solid var(--neutral);
+width: fit-content;
+margin: auto;
+
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects .project-tile{
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral);
+    text-decoration: none;
+    color: var(--accent);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.8 );
+}
+
+#projects .project-tile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-tile p {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.show-all :hover {
+    background-color: var(--neutral-focus);
+    color: var(--base-100);
+}
+
+#contact {
+    background-color: var(--neutral);
+    color: var(--base-100);
+}
+
+#contact h1 {
+    margin-top: 250px;
+}
+
+#contact .coffee-question {
+    color: var(--primary);
+    font-size: 25px;
+    font-style: italic;
+}
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#contact .social-media {
+    text-decoration: none;
+    color:var(--base-100);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#contact .social-medias :hover {
+transform: translateY(10px);
+color: var(--primary);
+}
+
+footer {
+    border-top:2px solid var(--primary) ;
+    color: var(--base-100);
+    font-size: 20px;
+    padding: 30px;
+}
+
+@media only screen and (width < 700px) {}
+    h1 {
+        font-size: 50px;
+    }
+    #projects .project-tile {
+        height: 600px;
+        width: 100%;
+    }
