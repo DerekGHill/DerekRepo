@@ -1,0 +1,27 @@
+body{
+    font-family:"Lucida Console", monospace; background-color:white;}
+    #main{background-color:#f1f1f1;}
+    #title {text-align:center; font-size: 50px;
+    padding:40px;
+    }
+    #description{text-align:center; font-size:25px;}
+    #img-div{background-color:white;padding:20px;}
+    img{max-width:100%;}
+
+
+    #image{display:block; border:3px double black;}
+    #img-caption{text-decoration:underline;text-align: center;font-size:25px;}
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    
+      width: 75%;
+    }
+    h1{background-color:#FF0000;}
+    #subtitle{font-size: 25px; text-align: center; padding: 10px 0; font-weight: 300;}
+    #tribute{width:100%;flex-direction:column; justify-content: center; align-items: center;}
+    ul, #quote{max-width:550px; }
+    li{margin:20px; text-align:justify;}
+    #quote{font-style:italic; margin:20px;}
+    
